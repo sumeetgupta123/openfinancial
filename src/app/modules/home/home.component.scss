@@ -1,0 +1,243 @@
+.mt-60 {
+  margin-top: 60px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.ml-40 {
+  margin-left: 47px;
+}
+.mt-8 {
+  margin-top: 8em;
+}
+.left-top-img {
+  background-image: url("../../../assets/images/blob-small.svg");
+  height: 450px;
+  position: relative;
+  top: 120px;
+  width: 400px;
+  background-size: cover;
+  left: -9em;
+  background-repeat: round;
+}
+.right-top-img {
+  background-image: url("../../../assets/images/circle.svg");
+  height: 900px;
+  position: relative;
+  background-size: cover;
+  top: -10em;
+}
+.content {
+  position: absolute;
+  top: 10em;
+  padding-left: 4em;
+  .h1 {
+    color: #222222;
+    font-size: 40px;
+    width: 85%;
+    font-weight: normal;
+  }
+  .underline {
+    border-bottom: 8px solid #000000;
+    width: 236px;
+    border-radius: 13px;
+    opacity: 0.7;
+    float: left;
+  }
+  .collect-img {
+    width: 500px;
+    height: 265px;
+    border-radius: 8px;
+    margin-top: 60px;
+    z-index: 1;
+    position: relative;
+  }
+  .dots {
+    bottom: -2em;
+    position: absolute;
+    z-index: 2;
+    left: 20em;
+    background-size: initial;
+    width: 314px;
+  }
+}
+.content-right {
+  position: absolute;
+  top: 10em;
+  padding-left: 15em;
+  .calc-card {
+    background-color: white;
+    border-radius: 13px;
+    width: 300px;
+    position: relative;
+    z-index: 4;
+    box-shadow: 0px 0px 30px #2321321f;
+    .dots {
+      position: absolute;
+      z-index: 1;
+      bottom: -53px;
+      left: 6em;
+    }
+    .head {
+      font-size: 14px;
+      color: #222222;
+      background: #fcfcff;
+      padding: 10px;
+      border-radius: 13px 13px 0 0;
+      text-align: center;
+    }
+
+    .calculate {
+      padding: 0 20px;
+    }
+    .sub-head {
+      font-size: 14px;
+      color: #222222;
+      margin-top: 30px;
+    }
+    .left-limit {
+      color: #00000033;
+      font-size: 10px;
+      position: absolute;
+      left: 5px;
+      top: 40px;
+    }
+    .right-limit {
+      color: #00000033;
+      font-size: 10px;
+      position: absolute;
+      right: 10px;
+      top: 40px;
+    }
+    .toggle-title {
+      font-size: 12px;
+    }
+    b {
+      font-size: 20px;
+    }
+  }
+  .value-card {
+    background-color: #663399;
+    height: 350px;
+    width: 190px;
+    position: absolute;
+    border-radius: 0 13px 13px 0;
+    left: 19.5em;
+    top: 5em;
+    text-align: center;
+    padding: 45px 0;
+    box-shadow: 0px 0px 30px #2321321f;
+    label {
+      color: #fcfcff;
+      font-size: 16px;
+      margin: 0;
+      opacity: 0.8;
+    }
+    span {
+      color: white;
+      font-size: 18px;
+    }
+    .money-btn {
+      width: 118px;
+      height: 45px;
+      border: 2px solid #663399;
+      border-radius: 24px;
+      font-size: 14px;
+      color: #663399;
+      margin-top: 8px;
+      background: white;
+      &:hover {
+        background: #9f62c9;
+        color: white;
+      }
+    }
+  }
+}
+.dot-wrap {
+  float: left;
+  position: absolute;
+  z-index: 1;
+  bottom: -3.5em;
+  right: 2em;
+}
+.bottom-img {
+  background-image: url("../../../assets/images/sol_wave_bg.svg");
+  background-repeat: no-repeat;
+  height: 800px;
+  width: auto;
+  background-size: cover;
+}
+.quick-cards {
+  width: 85%;
+  background: white;
+  box-shadow: 0px 0px 30px #2321321f;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  padding: 20px;
+  &:hover {
+    background: rgb(159 98 201 / 50%);
+    border: none;
+    border: 1px solid transparent;
+    .bold {
+      color: white;
+    }
+    .text {
+      color: white;
+    }
+  }
+}
+.bottom-section {
+  .content {
+    position: absolute;
+    top: 0em;
+    padding-left: 4em;
+  }
+  .icon {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+  }
+  .bold {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .text {
+    color: #999999;
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 40px;
+    color: #222222;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .border-btm {
+    border-bottom: 8px solid #707070;
+    width: 120px;
+    border-radius: 13px;
+    float: left;
+  }
+  .sub-head {
+    font-size: 18px;
+    color: #777777;
+    width: 82%;
+    margin-top: 33px;
+  }
+  .secondary {
+    width: 279px;
+    height: 58px;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    font-size: 16px;
+    background: transparent;
+    color: #663399;
+    margin-top: 8px;
+    margin-right: 24px;
+    &:hover{
+        background: #663399;
+        color: white;
+    }
+  }
+}

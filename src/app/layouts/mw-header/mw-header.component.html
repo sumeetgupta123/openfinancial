@@ -1,0 +1,16 @@
+<header class="float-left fixed" [ngClass]="isSticky ? 'shadow':''">
+
+    <button mat-flat-button class="col-1 float-left" routerLink="/">
+      <img src="../../../assets/images/logo.png" alt="logo" [ngClass]="isSticky ? 'scale-img':'img'"/>
+    </button>
+
+    <div class="col-11 col-md-11 col-lg-11 col-xl-11 float-right right-section">
+        <ul class="float-left">
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Solutions">Solutions</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+          </ul>
+          <button class="float-left secondary">Login</button>
+          <button class="float-left primary">Get Started</button>
+    </div>
+</header>

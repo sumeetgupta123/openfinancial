@@ -1,0 +1,108 @@
+<div class="col-12 col-md-12 col-lg-12 col-xl-12 float-left no-pad ">
+  <div class="col-12 col-md-12 col-lg-12 col-xl-12 float-left no-pad ">
+  <div class="col-12 col-md-12 col-xl-5 no-pad float-left">
+    <div class="left-top-img"></div>
+    <div class="col-12 content float-left">
+      <h1 class="col-10 float-left no-pad title">We make it Super Simple</h1>
+      <span class="underline"></span>
+      <img src="assets/images/collect_img-video.png" class="collect-img" alt="videoimg" />
+      <img src="assets/images/accounting_dots.svg" class="dots" alt="dots" />
+
+    </div>
+  </div>
+  <div class="col-12 col-md-12 col-xl-7 float-left no-pad">
+    <div class="right-top-img"></div>
+    <div class="col-12 content-right float-left">
+      <span class="dot-wrap">
+        <img src="assets/images/accounting_dots.svg" class="dots" alt="dots" />
+      </span>
+      <div class="calc-card float-left ">
+   
+        <span class="col-12 float-left no-pad head">Eligibility Calculator</span>
+        <div class="col-12 float-left calculate">
+          <label class="col-12 float-left no-pad sub-head">Monthly Income</label>
+          <b class="col-12 float-left no-pad gridSizeValue">&#x20B9;{{gridsize.value}}</b>
+          <div class="col-12 float-left no-pad">
+            <mat-slider class="col-12 float-left no-pad" #gridsize (change)="updateSetting($event)" step="1000"
+              min="100000" max="300000" [value]="gridsize"></mat-slider>
+            <span class="left-limit">&#x20B9;1,00,000</span>
+            <span class="right-limit">&#x20B9;3,00,000</span>
+          </div>
+          <label class="col-12 float-left no-pad sub-head ">Monthly Expense</label>
+          <b class="col-12 float-left no-pad gridSizeValue">&#x20B9;{{gridsizeexpense.value}}</b>
+          <div class="col-12 float-left no-pad">
+            <mat-slider class="col-12 float-left no-pad" #gridsizeexpense (change)="updateSettingexpense($event)"
+              step="1000" min="0" max="300000" [value]="gridsizeexpense"></mat-slider>
+          </div>
+          <mat-form-field class="col-12 float-left no-pad mt-10">
+            <mat-label>Repayment Tenure</mat-label>
+            <mat-select [(value)]="selectedtenure">
+              <mat-option *ngFor="let pay of tenure" [value]="pay.value">
+                {{pay.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="col-12 float-left no-pad my-3">
+            <span class="float-left toggle-title ">Do you have any exsisting loans ? <mat-slide-toggle class="ml-40">
+              </mat-slide-toggle></span>
+          </div>
+          <mat-form-field class="col-12 float-left no-pad my-3">
+            <mat-label>EMI of exsisting loan (optional)</mat-label>
+            <input matInput placeholder="Enter" value="&#x20B9;1,00,000">
+          </mat-form-field>
+        </div>
+      
+        <div class="value-card float-left">
+          <div class="col-12 float-left my-3">
+            <label for="loan">Loan amount</label>
+            <span id="loan">&#x20B9;1,00,000</span>
+          </div>
+          <div class="col-12 float-left my-3">   
+          <label for="emi">Your EMI will be</label>
+          <span id="emi">&#x20B9;15,000</span>
+          </div>
+          <div class="col-12 float-left my-3">  
+          <button class="money-btn">GET MONEY</button>  
+          </div>
+        </div>
+      </div>
+   
+    </div>
+  </div>
+</div>
+<div class="col-12 col-md-12 col-lg-12 col-xl-12 float-left no-pad ">
+  <div class="col-12 col-md-12 col-xl-12 no-pad float-left bottom-section">
+    <div class="bottom-img"></div>
+    <div class="col-12 content float-left">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 float-left no-pad">
+        <div class="quick-cards float-left" *ngFor="let item of quickcards"> 
+          <div class="col-12 float-left no-pad">
+            <img class="icon" src={{item.icon}} alt="icon"/>
+          </div> 
+          <span class="col-12 float-left my-2 bold">{{item.title}}</span>  
+          <span class="col-12 float-left text">{{item.text}}</span>     
+
+        </div>
+      
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 float-left no-pad mt-8">
+        <div class="quick-cards float-left" *ngFor="let item of quickcard">
+          <div class="col-12 float-left no-pad">
+            <img class="icon" src={{item.icon}} alt="icon"/>
+            <span class="col-12 float-left my-2 bold">{{item.title}}</span>  
+            <span class="col-12 float-left text">{{item.text}}</span> 
+          </div>  
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 float-left no-pad mt-8">
+        <h3>Boost your business with Open</h3>
+        <span class="border-btm"></span>
+        <span class="col-12 float-left no-pad sub-head">Get your hands on a term loan that’s crafted for your business</span>
+        <button class="float-left secondary my-5">Get an Open Account</button>
+      </div>
+    </div>
+    </div>
+
+  </div>
+
+</div>
